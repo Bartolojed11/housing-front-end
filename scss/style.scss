@@ -1,0 +1,27 @@
+@import './config';
+@import './mixins';
+@import './utilities';
+@import './navbar';
+@import './footer';
+
+@import './index-style';
+@import './services-style';
+@import './project-style';
+
+// social media links
+.social-media {
+    position: fixed;
+    bottom: 4rem;
+    left: 3rem;
+    z-index: 10;
+
+    li {
+        line-height: 4rem;
+    }
+
+    i {
+        color: #fff;
+        font-size: 3rem;
+    }
+}
+// end of social media links 

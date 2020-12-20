@@ -1,0 +1,54 @@
+#projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40rem;
+    padding: 8rem 8rem 0rem 8rem;
+
+    & > div {
+        padding: 0 8rem;
+        border: .1rem solid $light-gray;
+        @include flexCenter;
+
+        &:first-child {
+            background-color: $light-gray;
+        }
+    }
+
+    .grid-1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .grid-2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .grid-3 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .grid-4 {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+    }
+}
+
+.project-container {
+    margin: 8rem;
+    padding: 0rem 8rem 8rem 8rem;
+    border-bottom: .1rem solid $light-gray;
+
+    h1 {
+        margin-bottom: 2rem;
+    }
+
+    p {
+        line-height: 3rem;
+    }
+}
+
+section.project-container:nth-child(5) {
+    border: none;
+}

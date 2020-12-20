@@ -1,0 +1,38 @@
+.navbar {
+    height: 64px;
+    width: 100%;
+    padding: 0 8rem;
+    position: absolute;
+    z-index: 2;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        
+        a {
+            font-size: 1.4rem;
+            line-height: 6.4rem;
+            padding: 0 1rem;
+            text-transform: uppercase;
+            color: #fff;
+            transition: font-weight .5s;
+        }
+
+        a:hover, .active {
+            font-weight: 900;
+        }
+
+        li:first-child {
+            margin-right: auto;
+
+            a {
+                text-transform: none;
+            }
+        }
+    }
+
+    #{&}__logo {
+        font-weight: 900;
+    }
+}
+/* end of navigation bar */
