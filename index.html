@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- navigation bar -->
-    <header >
+    <header style="display: none;">
         <nav class="navbar">
             <ul>
                 <li><a class="navbar__logo" href="index.html">John Doe Housing company</a></li>
@@ -26,7 +26,7 @@
     <!-- end of navigation bar -->
 
     <!--Banner -->
-    <section class="banner" >
+    <section class="banner">
         <div class="banner__img"></div>
         <div class="banner__description">
             <h1>John Doe Housing company</h1>
@@ -131,19 +131,19 @@
         </div>
         <div class="grid-2">
             <div class="w-80">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero corporis quos sapiente reprehenderit, aliquam consequuntur reiciendis temporibus accusantium! Facilis ad repellendus neque minima soluta in nesciunt rem qui at impedit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto maxime reiciendis consectetur voluptates, ut veniam.</p>
                 <h2>John Doe</h2>
             </div>
         </div>
         <div class="grid-3">
             <div class="w-80">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore exercitationem asperiores fugit error sunt alias neque sequi reiciendis minima debitis. Quaerat assumenda libero modi pariatur officiis totam. Odit, placeat consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto maxime reiciendis consectetur voluptates, ut veniam.</p>
                 <h2>John Doe</h2>
             </div>
         </div>
         <div class="grid-4">
             <div class="w-80">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore exercitationem asperiores fugit error sunt alias neque sequi reiciendis minima debitis. Quaerat assumenda libero modi pariatur officiis totam. Odit, placeat consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto maxime reiciendis consectetur voluptates, ut veniam.</p>
                 <h2>John Doe</h2>
             </div>
         </div>
@@ -153,7 +153,7 @@
     <!-- footer -->
     <footer id="contact">
         <div class="grid-1">
-            <h1>Contact Us</h1>
+            <h1>Contact Details</h1>
             <ul>
                 <li><i class="fas fa-map-marker-alt"></i>Angeles City, Pampanga, Philippines</li>
                 <li><i class="far fa-envelope"></i>jedbartolo11@gmail.com</li>
@@ -161,24 +161,31 @@
             </ul>
         </div>
         <div class="grid-2">
+            <div>
+                <h1>Contact Us</h1>
+            </div>
             <form action="#" metod="POST">
                 <div class="grid-1">
                     <label for="fullname">Full name</label>
-                    <input type="text" id="fullname">
+                    <input type="text" id="fullname" placeholder="Fullname">
                 </div>
                 <div class="grid-2">
                     <label for="phone">Phone</label>
-                    <input type="text" id="phone">
+                    <input type="text" id="phone" placeholder="Phone">
                 </div>
                 <div class="grid-3">
                     <label for="email">Email*</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" placeholder="Email">
                 </div>
                 <div class="grid-4">
                     <label for="address">Address</label>
-                    <input type="text" id="address">
+                    <input type="text" id="address" placeholder="Address">
                 </div>
                 <div class="grid-5">
+                    <label for="Message">Message</label>
+                    <textarea name="" id="" cols="20" rows="8" placeholder="Message"></textarea>
+                </div>
+                <div class="grid-6">
                     <button type="submit" class="btn btn-secondary">Submit</button>
                 </div>
             </form>

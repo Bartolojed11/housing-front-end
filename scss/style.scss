@@ -2,12 +2,11 @@
 @import './mixins';
 @import './utilities';
 @import './navbar';
-@import './footer';
 
 @import './index-style';
 @import './services-style';
 @import './project-style';
-
+@import './footer';
 // social media links
 .social-media {
     position: fixed;
@@ -23,5 +22,18 @@
         color: #fff;
         font-size: 3rem;
     }
+
+    @include mediaW(461px) {
+        position: relative;
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            padding-right: 1.5rem;
+        }
+    }
 }
+
 // end of social media links 

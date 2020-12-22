@@ -1,12 +1,12 @@
 * {
     box-sizing: border-box;
+    font-family: Helvetica;
     margin: 0;
     padding: 0;
 }
 
 html {
     font-size: 62.5%;
-    font-family: Helvetica;
     font-weight: 100;
 }
 
@@ -42,3 +42,37 @@ p {
     font-weight: 100;
     color: #fff;
 }
+
+input, textarea {
+    color: #fff;
+    margin-top: 1rem;
+    height: 3rem;
+    padding: 1rem;
+    outline: none;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: .1rem solid $light-gray;
+}
+
+textarea {
+    font-family: Helvetica;
+    height: 10rem;
+    resize: none;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+
+// Responsive
+@media (max-width: 1280px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+// End of responsive
