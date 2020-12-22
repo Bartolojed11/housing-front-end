@@ -1,14 +1,24 @@
 #services {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 40rem);
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-rows: repeat(3, min-content);
     padding: 8rem;
 
     & > div {
         border: .1rem solid $light-gray;
     }
 
-    .grid-1, .grid-2, .grid-3, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
+    .grid-1, 
+    .grid-2,
+    .grid-3,
+    .grid-6,
+    .grid-7,
+    .grid-8,
+    .grid-9,
+    .grid-10,
+    .grid-11,
+    .grid-12 {
+        padding: 4rem 2rem;
         @include flexCenter;
     }
 
@@ -30,69 +40,17 @@
 
     .grid-1 {
         background: $light-gray;
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
     }
 
-    .grid-2 {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-    }
-
-    .grid-3 {
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
-    }
-
-    .grid-4 {
-        grid-column: 4 / 5;
-        grid-row: 1 / 2;
+    .grid-4, .grid-5 {
         img {
             @include fitImage
         }
     }
+}
 
-    .grid-5 {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-        img {
-            @include fitImage
-        }
+@include mediaW(462px) {
+    #services {
+        padding: 0 2rem;
     }
-
-    .grid-6 {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-    }
-
-    .grid-7 {
-        grid-column: 3 / 4;
-        grid-row: 2 / 3;
-    }
-
-    .grid-8 {
-        grid-column: 4 / 5;
-        grid-row: 2 / 3;
-    }
-
-    .grid-9 {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-    }
-
-    .grid-10 {
-        grid-column: 2 / 3;
-        grid-row: 3 / 4;
-    }
-
-    .grid-11 {
-        grid-column: 3 / 4;
-        grid-row: 3 / 4;
-    }
-
-    .grid-12 {
-        grid-column: 4 / 5;
-        grid-row: 3 / 4;
-    }
-
 }

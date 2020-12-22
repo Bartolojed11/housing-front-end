@@ -195,7 +195,7 @@ footer {
     }
 }
 
-@include mediaW(414px) {
+@include mediaW(462px) {
     footer {
         .grid-1,  .grid-2,  .grid-3 {
             padding: 0 2rem;
