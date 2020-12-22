@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
-<body>
+<body onload="initScript()">
     <!-- navigation bar -->
-    <header style="display: none;">
-        <nav class="navbar">
+    <header>
+        <nav class="navbar" id="navigation">
             <ul>
                 <li><a class="navbar__logo" href="index.html">John Doe Housing company</a></li>
                 <li><a href="index.html" class="active">Home</a></li>
@@ -22,6 +22,11 @@
                 <li><a class="btn btn-secondary" href="#">Call Now</a></li>
             </ul>
         </nav>
+        <div  class="navbar-mobile__menu">
+            <button class="btn btn-mobile-menu" id="mobile_menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </header>
     <!-- end of navigation bar -->
 
@@ -205,10 +210,12 @@
     <!-- fixed social media links-->
     <section class="social-media">
         <ul>
-            <li><a href="https://www.facebook.com/JedBartolo.11/"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://www.facebook.com/JedBartolo.11/"><i class="fab fa-instagram"></i></a></li>
+            <li><a target="_blank"  href="https://www.facebook.com/JedBartolo.11/"><i class="fab fa-facebook"></i></a></li>
+            <li><a target="_blank"  href="https://www.facebook.com/JedBartolo.11/"><i class="fab fa-instagram"></i></a></li>
         </ul>
     </section>
     <!-- end of fixed social media links -->
+
+    <script src="js/navbar.js"></script>
 </body>
 </html>
