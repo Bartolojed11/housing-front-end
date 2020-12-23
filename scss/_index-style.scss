@@ -279,6 +279,14 @@
     }
 }
 
+
+@include mediaW(461px) {
+    #capabilities, #testimonials, .ndx-project {
+        padding: 0 2rem;
+    }
+}
+
+
 @include mediaW(430px) {
     .ndx-project {
         #{&}__content {
