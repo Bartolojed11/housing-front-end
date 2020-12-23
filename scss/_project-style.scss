@@ -13,7 +13,7 @@
 }
 
 @include mediaW(462px) {
-    .project-container {
+    #projects, .project-container {
         padding: 0 2rem;
     }
 }
