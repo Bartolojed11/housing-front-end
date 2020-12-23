@@ -25,7 +25,9 @@
 
     @include mediaW(461px) {
         position: relative;
-
+        bottom: 2rem;
+        left: 0rem;
+        padding-left: 2.5rem;
         ul {
             display: flex;
         }
